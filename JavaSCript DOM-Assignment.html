@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        *{margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+        .dom{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        body{
+            background-color: rgb(132, 167, 198);
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid black;
+            height: 200px;
+            width: 250px;
+            margin-left: 500px;
+        }
+        #myBtn{
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dom"></div>
+    <button id="myBtn">Try it</button>
+    <p id="mouseover"></p>
+    <p id="mouseout"></p>
+    <p id="click"></p>
+</div>
+    <script>
+        var x = document.getElementById("myBtn");
+
+        x.addEventListener("mouseover", function1);
+        x.addEventListener("mouseout", function2);
+        x.addEventListener("click", function3);
+
+        function function1(){document.getElementById("mouseover").innerHTML="mouse over!";}
+        function function2(){document.getElementById("mouseout").innerHTML="mouse out!";}
+        function function3(){document.getElementById("click").innerHTML="click!";}
+
+
+    </script>
+</body>
+</html>
